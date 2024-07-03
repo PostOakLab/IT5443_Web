@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Results</title>
+
+</head>
+
+<body>
+
+    <h1>Your name is <span id="name">????</span></h1>
+
+
+
+
+
+
+
+
+
+<script>
+    var url_string = window.location.search;
+
+    var params = new URLSearchParams(url_string);
+
+    var header = document.getElementById("name");
+    name.innerHTML = params.get("name");
+    
+    if (params.has("age"))
+    {
+        alert("You are " + params.get("age"))
+    }
+
+
+
+
+</script>
+
+</body>
+
+
+
+</html>
