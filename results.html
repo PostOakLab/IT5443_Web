@@ -1,12 +1,24 @@
 <html>
 <head>
     <title>Results</title>
-
+    <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
 
-    <h1>Your name is <span id="name">????</span></h1>
+    <h1>Your name is <span id="n">????</span><br>
+        Your email is <span id="email">????</span><br>
+        Today is <span id="d">????</span><br>
+        You live in <span id="sel">????</span><br>
+        Receive e-newletter? <span id="check">????</span><br>
+        Contact Preference: <br>
+        <span id="em"></span><br>
+        <span id="phone"></span><br><span id="text"></span>
+        </h1>
+
+    <p>
+        Your comment: <span id="comments">????</span>
+    </p>
 
 
 
@@ -19,14 +31,24 @@
 <script>
     var url_string = window.location.search;
 
-    var params = new URLSearchParams(url_string);
+    var params = new URLSearchParams (url_string);
 
-    var header = document.getElementById("name");
-    name.innerHTML = params.get("name");
+    var header = document.getElementById("");
+    n.innerHTML = params.get("n");
+    email.innerHTML = params.get("email");
+    d.innerHTML = params.get("d");
+    sel.innerHTML = params.get("sel");
+    comments.innerHTML = params.get("comments");
+    em.innerHTML = params.get("em");
+    phone.innerHTML = params.get("phone");
+    text.innerHTML = params.get("text");
+
+
+    var header
     
     if (params.has("age"))
     {
-        alert("You are " + params.get("age"))
+        alert("You are " + params.get("age") + " years old");
     }
 
 

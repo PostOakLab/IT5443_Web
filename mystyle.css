@@ -1,0 +1,37 @@
+body {
+    background-color: aqua;
+}
+
+h1 {
+    color:darkblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color:brown;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    background-color: azure;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form {
+    background-color: pink;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.pform {
+    background-color: pink;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formhead {
+    background-color: pink;
+    color: darkred;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
