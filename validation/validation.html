@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>HTML Form Validation</title>
+	
+	<script type="text/javascript">
+	function ProcessForm()
+	{
+
+	}
+	</script>
+</head>
+
+<body>
+
+<h1>HTML Form Validation</h1>
+<h2>Student Profile</h2>
+  <table width="500" border="0">
+    <tr> 
+      <td width="150"><strong>Password</strong></td>
+      <td><input type="password" id="password1" name="password1" size="20" maxlength="20" required /></td>
+    </tr>
+    <tr> 
+      <td><strong>Confirm</strong></td>
+      <td><input type="password" id="password2" name="password2" size="20" maxlength="20" required /></td>
+    </tr>
+    <tr> 
+      <td><strong>Check</strong></td>
+      <td><input type="checkbox" name="agree" value="Yes" required />
+        Yes, I agree</td>
+    </tr>
+    </table>
+  <p>
+    <input type="button" value="Process" onclick="ProcessForm()" />
+  </p>
+
+<div id="result"></div>
+
+<script>
+      var url_string = window.location.search;
+
+      var params = new URLSearchParams (url_string);
+
+      var header = document.getElementById("");
+
+      if (params.has("password1"))
+      {
+
+      }
+      else
+      {
+        alert("Required");
+      }
+      if (params.has("password2"))
+      {
+
+      }
+      else{
+        alert("Required");
+      }
+</script>
+</body>
+</html>
